@@ -48,4 +48,9 @@ Videonun altında yorumları gösterir ve kullanıcılara etkileşimde bulunma i
 * **React Player:** Kullanıcıların tıklanan videoları oynatabilmesi için kullanılmıştır.
 * **Millify:** Sayı formatlamak için kullanılmıştır.
 * **Moment:** Zaman formatlamak için kullanılmıştır.
+
+## Ekran Gifi
+
+![kayt1-ezgif com-video-to-gif-converter](https://github.com/serhatakhan/YouTube-Clone/assets/147662915/fc7ecddd-801f-4967-84fc-79f56778164b)
+
  

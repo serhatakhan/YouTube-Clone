@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(15, 15, 15);
+  color: #fff;
+}
+
+.videos {
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  height: 100vh;
+  /* overflow: auto; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* repeat(2,300px) --> 2 kere tekrar et ve 300px boyutlarında olsun. */
+  /** 2 yerine 'auto-fit' yazarsak --> kaç kere tekrar edeceğini kendin belirle dedik.
+    otomatik kaç sütun olacaksa sığdırıyor. **/
+  /* minMax(300px, 1fr) --> minimum ve maximum kaç px olsun onu belirledik. 1fr ile 
+    olabildiğince boşlukları kaplamış oluyor. */
+  justify-content: center;
+  padding: 18px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.detail-page {
+  display: grid;
+  grid-template-columns: auto 370px;
+}
+
+@media (max-width: 1000px) {
+  .detail-page {
+    grid-template-columns: 1fr;
+    /* tek sütün olsun dedik. alt alta koydu. */
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 14px;
+}
+
+/* @media (min-width:1000px) {
+  .row{
+    grid-template-columns: 200px 1fr;
+  }
+} */
+
+/* row classının içinde bizim belirlediğimiz channel picture c-pic classı varsa bu none olsun */
+.row .c-pic {
+  display: none;
+}
+
+.row .v-title {
+  font-size: 15px;
+}
+
+.row .c-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.row .c-detail {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.row .c-detail span {
+  display: none;
+}
+
+.comment {
+  display: grid;
+  grid-template-columns: auto 1fr; /* İlk sütun resim, ikinci sütun metin */
+  gap: 1rem;
+}
+
+.comment img {
+  align-self: start; /* Resmi en üstte hizala */
+}
